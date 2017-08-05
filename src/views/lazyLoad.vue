@@ -47,10 +47,7 @@
 					const topq = topqdom.getBoundingClientRect().top;
 					const offse = topqdom.offsetHeight;
 					if (topq < (20+topw) && topq > -offse){
-						console.log('topw', topw);
-						console.log('topq', topq);
 						const src1 = topqdom.getAttribute('src1');
-						const src2 = topqdom.getAttribute('src2');
 						topqdom.setAttribute('src', src1);
 					}
 				},

@@ -6,7 +6,6 @@
 
 <template>
   <div class="input-field col-lg-3" v-if="type !== 'vertial'">
-    
     <button @click="decrease" class="btn-nums-horizontal">-</button>
     <input 
            v-model="counter"

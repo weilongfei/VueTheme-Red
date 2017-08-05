@@ -122,7 +122,7 @@ Draggable.prototype.createDragImage = function createDragImage(type, dragDom) {
 Draggable.prototype.initVue = function initVue(vueInstance) {
 	this.vueInstance = vueInstance;
 };
-
+// 记录
 Draggable.prototype.createVueDom = function createVueDom(type) {
 	const div = document.createElement('DIV');
 	div.setAttribute('draggable', 'true');
@@ -140,6 +140,7 @@ Draggable.prototype.createVueDom = function createVueDom(type) {
 		default:
 	}
 	div.appendChild(dom);
+
 	this.vueInstance.$compile(div);
 	return div;
 };
